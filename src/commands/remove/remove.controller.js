@@ -7,7 +7,7 @@ const messages = require('../../messages');
 
 class removeClass {
   removeHandler() {
-    utils.log.info('I have done something very good');
+    utils.log.info('Removing Services');
     const savedOpts = _.get(this.serverless, 'variables.service.custom.smConfig.deploy', {});
     const scope = this.options['sm-scope'] || savedOpts.scope || 'global';
     let parallel = this.options['sm-parallel'] ? this.options['sm-parallel'] === 'true' : false;
